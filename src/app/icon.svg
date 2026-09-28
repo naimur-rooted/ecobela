@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Maroon background with rounded corners -->
+  <rect width="32" height="32" rx="6" fill="#8B1D41"/>
+  
+  <!-- Letter E -->
+  <text x="3" y="23" font-family="Georgia, serif" font-size="20" font-weight="700" fill="white">E</text>
+  
+  <!-- Letter B -->
+  <text x="17" y="23" font-family="Georgia, serif" font-size="20" font-weight="700" fill="white">B</text>
+  
+  <!-- Small leaf between letters -->
+  <path d="M16 10 C16 10 19 7 21 10 C19 13 16 10 16 10Z" fill="#dcfce7" opacity="0.7"/>
+  <path d="M16 10 L18.5 12.5" stroke="#dcfce7" stroke-width="0.7" opacity="0.7" stroke-linecap="round"/>
+</svg>

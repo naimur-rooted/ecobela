@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --font-sans: "Inter", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --header-height: 4.5rem;
+  --announcement-height: 2.25rem;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-ink-900 antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  ::selection {
+    @apply bg-brand-200 text-brand-950;
+  }
+
+  /* Visible focus ring for keyboard users — accessibility */
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-600 ring-offset-2 ring-offset-white;
+  }
+
+  h1, h2, h3 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .label {
+    @apply mb-1.5 block text-sm font-medium text-ink-800;
+  }
+
+  .hint {
+    @apply mt-1 text-xs text-ink-500;
+  }
+
+  .field {
+    @apply w-full rounded-lg border border-ink-200 bg-white px-3.5 py-2.5 text-sm text-ink-900 shadow-sm transition
+      placeholder:text-ink-400 focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-100 disabled:cursor-not-allowed disabled:bg-ink-50;
+  }
+
+  .card {
+    @apply rounded-2xl border border-ink-100 bg-white shadow-card;
+  }
+
+  .link-muted {
+    @apply text-ink-600 underline-offset-4 transition hover:text-brand-700 hover:underline;
+  }
+
+  /* Premium btn — Aarong style */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-maroon-800 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-white transition hover:bg-maroon-900 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-maroon-600 focus-visible:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-maroon-800 px-8 py-3 text-sm font-semibold uppercase tracking-widest text-maroon-800 transition hover:bg-maroon-800 hover:text-white active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-maroon-600 focus-visible:ring-offset-2;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-medium text-ink-700 transition hover:bg-ink-50 active:scale-[0.98];
+  }
+
+  /* Section headings */
+  .section-title {
+    @apply font-display text-3xl font-semibold text-ink-900 sm:text-4xl;
+  }
+
+  .section-subtitle {
+    @apply mt-2 text-sm text-ink-500 sm:text-base;
+  }
+
+  /* Category cards */
+  .category-card {
+    @apply group relative overflow-hidden rounded-2xl bg-clay-100 transition-all duration-300 hover:shadow-card-hover;
+  }
+
+  /* Product card */
+  .product-card-image {
+    @apply relative aspect-[3/4] overflow-hidden rounded-2xl bg-clay-100;
+  }
+
+  /* Marquee animation */
+  .marquee-track {
+    @apply flex animate-marquee whitespace-nowrap;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Text balance */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Gold shimmer */
+  .shimmer {
+    background-size: 200% 100%;
+    @apply animate-shimmer bg-shimmer-gradient;
+  }
+}

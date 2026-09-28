@@ -1,0 +1,45 @@
+{
+  "name": "ecobela",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Eco Bela - omnichannel e-commerce platform (storefront + admin panel)",
+  "scripts": {
+    "dev": "next dev",
+    "dev:db": "node scripts/dev-db.mjs",
+    "db:setup": "node scripts/dev-db.mjs --setup",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "db:migrate": "prisma migrate dev",
+    "db:deploy": "prisma migrate deploy",
+    "db:generate": "prisma generate",
+    "db:studio": "prisma studio",
+    "admin:create": "tsx scripts/create-admin.ts",
+    "categories:import": "tsx scripts/reconcile-categories.ts",
+    "categories:list": "tsx scripts/list-categories.ts",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "6.19.3",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.11.0",
+    "embla-carousel-react": "^8.6.0",
+    "next": "15.5.26",
+    "next-auth": "^4.24.15",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "autoprefixer": "^10.4.20",
+    "embedded-postgres": "^17.10.0-beta.17",
+    "postcss": "^8.4.49",
+    "prisma": "6.19.3",
+    "tailwindcss": "^3.4.19",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

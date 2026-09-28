@@ -1,0 +1,2 @@
+Local fallback uploads are written here when Cloudinary is not configured.
+This folder is git-ignored except for this file.

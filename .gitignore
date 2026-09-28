@@ -1,0 +1,44 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# next.js
+/.next/
+/out/
+next-env.d.ts
+.next
+.turbo
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+Thumbs.db
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env
+.env
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# local uploads (fallback storage when Cloudinary is not configured)
+/public/uploads/*
+!/public/uploads/.gitkeep
+
+# local embedded postgres data + binaries
+/.pgdata
+/.pgbin
+
+# local dev logs / scripts
+/logs
+*.log
