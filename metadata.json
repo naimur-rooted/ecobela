@@ -1,0 +1,6 @@
+{
+  "name": "Ecobela — Bangladeshi Sustainable Luxury Fashion & Lifestyle",
+  "description": "Discover artisanal Jamdani & Muslin sarees, royal panjabis, festive bridal couture, handcrafted jewellery, and authentic Bengal crafts at Ecobela.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

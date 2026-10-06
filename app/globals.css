@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --color-heritage-gold: #B38E5D;
+  --color-heritage-deep: #121110;
+  --color-heritage-cream: #FAF8F5;
+  --color-heritage-sand: #F2ECE4;
+}
+
+@utility scale-102 {
+  transform: scale(1.02);
+}
+
+@utility scale-108 {
+  transform: scale(1.08);
+}
+
+@utility backdrop-blur-xs {
+  backdrop-filter: blur(2px);
+}
+
+@utility shadow-xs {
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+@utility rounded-xs {
+  border-radius: 0.125rem;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FFFFFF;
+  color: #1A1A1A;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F5F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4BEB1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #968F80;
+}
