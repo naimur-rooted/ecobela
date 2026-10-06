@@ -10,6 +10,13 @@ import { Footer } from '@/components/footer/Footer';
 export const metadata: Metadata = {
   title: 'Ecobela — Bangladeshi Sustainable Luxury Fashion & Lifestyle',
   description: 'Discover artisanal Jamdani & Muslin sarees, royal panjabis, festive bridal couture, handcrafted jewellery, and authentic Bengal crafts at Ecobela.',
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
   keywords: [
     'Ecobela',
     'Jamdani saree',

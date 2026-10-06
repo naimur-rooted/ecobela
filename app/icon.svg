@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14261C" />
+      <stop offset="100%" stop-color="#0A1810" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3E5AB" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#AA7C11" />
+    </linearGradient>
+  </defs>
+  <!-- Rounded Rect Background with soft luxury border -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+  <rect x="20" y="20" width="472" height="472" rx="108" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-opacity="0.5" />
+  
+  <!-- Outer Gold Decorative Ring -->
+  <circle cx="256" cy="256" r="206" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-dasharray="16 10" opacity="0.7"/>
+  <circle cx="256" cy="256" r="192" fill="none" stroke="url(#goldGrad)" stroke-width="3" />
+
+  <!-- Botanical Eco Leaf Top & Bottom Accents -->
+  <path d="M 256 78 C 272 108, 272 128, 256 148 C 240 128, 240 108, 256 78 Z" fill="url(#goldGrad)" opacity="0.9"/>
+  <path d="M 256 434 C 272 404, 272 384, 256 364 C 240 384, 240 404, 256 434 Z" fill="url(#goldGrad)" opacity="0.9"/>
+
+  <!-- Main Luxury Monogram "E" -->
+  <text x="256" y="330" 
+        font-family="Georgia, 'Playfair Display', serif" 
+        font-size="260" 
+        font-weight="700" 
+        text-anchor="middle" 
+        fill="url(#goldGrad)">E</text>
+</svg>
